@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age Verification</title>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(hand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.age-verification {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+    
+
+</style>
+</head>
+<body>
+    <div class="age-verification">
+        <h2>Age Verification</h2>
+        <p>Are you over 21 years old?</p>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+    <script src="script.js"></script>
+	
+</body>
+<script>
+document.getElementById("yesBtn").addEventListener("click", function() {
+    window.location.href = "home.html"; 
+});
+
+document.getElementById("noBtn").addEventListener("click", function() {
+     window.location.href = "Invalid.html"; 
+});
+</script>
+</html>
